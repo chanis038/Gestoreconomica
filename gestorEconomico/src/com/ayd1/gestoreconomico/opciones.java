@@ -37,16 +37,22 @@ public class opciones extends Activity {
         //asignacion de botones de activity a variables boton
         btn_gastos_diarios = (Button) findViewById(R.id.btn_gastosdiarios);
         presupuesto = (TextView) findViewById(R.id.muestra_presu);
-        presupuesto = (TextView) findViewById(R.id.saldo);
+        saldo = (TextView) findViewById(R.id.saldo);
         //llamada a asignacion de eventos
         eventos();
-       // muestr_presu();
+        muestr_presu();
     }	
  // metodo para mostar presupuesto en pantalla
     private void muestr_presu(){
-    	//String[] presu = getNombreCostos("Select presupuesto  From Usuario");
-    	presupuesto.setText("0.0");
-    	
+    	String[] presu = getNombreCostos("Select presupuesto  From usuario");
+    	if(presu != null){
+    	presupuesto.setText(presu[0]);
+    	}
+    	else{
+    		btn_gastos_diarios.setEnabled(false);
+        presupuesto.setText("No configurado");	
+        saldo.setText("No configurado");	
+    	}
     }
    /* @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -123,6 +129,8 @@ public class opciones extends Activity {
   	    	alert.show();
   		}
   	}
+  	
+  	
   	
   	//implemantado
   	public static void toad(Activity atv, String title, String mensaje, String boton){

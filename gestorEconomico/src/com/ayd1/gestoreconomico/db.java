@@ -19,7 +19,8 @@ public class db extends SQLiteOpenHelper{
         //tabla nombre del gasto
         db.execSQL("CREATE TABLE nombre (nombre TEXT PRIMARY KEY);");
         
-        db.execSQL("CREATE TABLE usuario (nombre TEXT PRIMARY KEY,presupuesto TEXT,moneda TEXT);");
+        db.execSQL("CREATE TABLE usuario (nombre TEXT PRIMARY KEY, presupuesto TEXT, moneda TEXT);");
+      
         //se insertan valores a la tabla
         db.execSQL("INSERT INTO nombre(nombre) VALUES('Almuerzo')");
         db.execSQL("INSERT INTO nombre(nombre) VALUES('Desayuno')");
@@ -28,8 +29,8 @@ public class db extends SQLiteOpenHelper{
         db.execSQL("INSERT INTO nombre(nombre) VALUES('Coca cola')");
         db.execSQL("INSERT INTO nombre(nombre) VALUES('Pasaje')");
         
-        db.execSQL("Delete * from Usuario");
-        db.execSQL("INSERT INTO Usuario(nombre,presupuesto,moneda) VALUES('user','0.0','Q')");
+      
+        db.execSQL("INSERT INTO usuario(nombre,presupuesto,moneda) VALUES('user','0.0','Q')");
       
     }
     @Override
@@ -37,7 +38,7 @@ public class db extends SQLiteOpenHelper{
     	// Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS nombre");
         db.execSQL("DROP TABLE IF EXISTS gasto");
-        db.execSQL("DROP TABLE IF EXISTS Usuario");
+        db.execSQL("DROP TABLE IF EXISTS usuario");
         // Create tables again
         onCreate(db);
     }

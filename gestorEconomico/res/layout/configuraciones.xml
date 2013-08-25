@@ -14,7 +14,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btn_guardar"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="150dp"
         android:layout_height="40dp"
@@ -33,7 +33,7 @@
         android:text="Conf. de Usuario" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btn_guardar"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="150dp"
         android:layout_height="40dp"

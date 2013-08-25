@@ -58,7 +58,7 @@
             android:src="@drawable/images" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/btn_guardar"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="200dp"
             android:layout_height="50dp"
@@ -73,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/button1"
+            android:layout_below="@+id/btn_guardar"
             android:layout_marginTop="30dp"
             android:text="PRESUPUESTO"
             android:textAppearance="?android:attr/textAppearanceMedium" />

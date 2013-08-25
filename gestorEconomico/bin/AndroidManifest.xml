@@ -35,7 +35,11 @@
             android:name="com.ayd1.gestoreconomico.configuraciones"
             android:label="" >
         </activity>
-       
+         <activity
+            android:name="com.ayd1.gestoreconomico.Configura_usuario"
+            android:label="" >
+        </activity>
+        
     </application>
 
 </manifest>

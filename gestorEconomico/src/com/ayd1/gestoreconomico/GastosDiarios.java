@@ -38,7 +38,7 @@ public class GastosDiarios extends Activity {
 		txt_costo = (EditText) findViewById(R.id.txt_costo);
 		txt_descripcion = (EditText) findViewById(R.id.txt_descripcion);
 		//cargando ID lista nombres a spinner de lista de nombres
-		spr_nombre = (Spinner) findViewById(R.id.spr_nombre);
+		spr_nombre = (Spinner) findViewById(R.id.spr_monedas);
 		//llamada a asignacion de eventos
         eventos();
 	}
